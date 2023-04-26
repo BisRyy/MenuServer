@@ -54,7 +54,7 @@ router.post('/', authenticate, authorize(['Hotel']), upload.array('image'), asyn
         allergenInformation: req.body.allergenInformation,
         nutritionalInformation: req.body.nutritionalInformation,
         vegetarian: req.body.vegetarian,
-        images: array,
+        images: req.body.images,
         type: req.body.type,
         availability: req.body.availability,
         rating: req.body.rating,
