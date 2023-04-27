@@ -35,7 +35,7 @@ const menuItemSchema = new mongoose.Schema({
     },
     images: {
         type: [String],
-        default: ["food.jpeg"]
+        default: ["/assets/images/food.jpg"]
     },
     type: {
         type: String,
