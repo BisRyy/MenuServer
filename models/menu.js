@@ -35,7 +35,7 @@ const menuItemSchema = new mongoose.Schema({
     },
     images: {
         type: [String],
-        default: ["/assets/images/food.jpg"]
+        default: ["https://foodtank.com/wp-content/uploads/2017/01/Food-Tank-Restaurant-Innovators-770x463.jpg"]
     },
     type: {
         type: String,
