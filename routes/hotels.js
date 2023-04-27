@@ -136,7 +136,7 @@ router.get('/:id/qr-generator', authenticate, authorize(['Hotel']), async (req, 
     
     const hotelId = req.params.id;
     try {
-        const hotelPageUrl = `https://menuhub.com/hotels/${hotelId}`;
+        const hotelPageUrl = `https://menuhub.bisry.comw/menu/${hotelId}`;
         const qrCodeDataUrl = await QRCode.toDataURL(hotelPageUrl);
         res.send(qrCodeDataUrl);
     } catch (error) {
